@@ -1,0 +1,48 @@
+jquery官网提供2种jQuery的下载，一种是jquery.js另一种是jquery.min.js
+文件名不一定完全相同，但通常情况下：
+jquery.js是完整的未压缩的jQuery库，文件比较大，一般用于阅读学习源码或修改源码，一般不用于线上项目。
+jquery.min.js是由完整版的jQuery库经过压缩得来，压缩后功能与未压缩的完全一样，只是将其中的空白字符、注释、空行等与逻辑无关的内容删除，并进行一些优化。这个版本一般用于网站引用使用，减小文件体积，降低网站流量，提升访问速度等。
+其它：
+一、涉及到Jquery的引用：
+     1、在线引用
+     	国外的CDN：
+     	1.Google Hosted Libraries
+            src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"
+		2.Microsoft CDN
+		            src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.0.min.js"
+		3.CDNJS
+		            src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"
+		4.jQuery官网
+		            src="http://code.jquery.com/jquery-1.11.0.min.js"
+		5.jsDeliver
+		            src="http://cdn.jsdelivr.net/jquery/2.0.0/jquery-2.0.0.min.js"
+		国内的CDN:
+		1.百度【本人一般引用这个】
+		            src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"
+		2.七牛
+		            src="http://cdn.staticfile.org/jquery/2.0.0/jquery.min.js"
+		3.新浪
+		            src="http://lib.sinaapp.com/js/jquery/1.6/jquery.min.js"
+		4.又拍云
+		            src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.0.min.js"
+		5.360
+		            src="http://libs.useso.com/js/jquery/2.0.0/jquery.min.js"
+		许多用户在访问其他站点时，已经从谷歌或微软加载过 jQuery。所有结果是，当他们访问您的站点时，会从缓存中加载 jQuery，这样可以减少加载时间。
+	2、本地引用
+		这个需要自己到官网上去下载jq插件库，导入本地项目，直接相对地址引用
+        src = "js/jquery-1.11.0.min.js"这种方式
+二、jquery-migrate说明：
+ 	应用迁移辅助插件
+		jQuery 版本之间有区别。比如1.9版本对于 live()，die()，toggle()，sub()，$.browser 等等都已经不支持了。 在不改变你网站代码的同时，要使用 1.9 之后的版本，你需要使用 jQuery migrate（转移、过度），详见 http://blog.jquery.com/2013/01/31/jquery-migrate-1-1-0-released/ （英文）。 所以
+		jquery-migrate-1.1.0.js
+		就是一个过渡插件 让你在原来代码上升级jquery 不用修改代码用的
+三、npm、bower、jamjs 等包管理器：
+	自己还没了解和使用。
+
+
+
+
+
+
+
+
